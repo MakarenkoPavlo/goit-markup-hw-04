@@ -450,6 +450,10 @@ list-style: none;
 .portfolio-work-card {
     flex-basis: calc((100% - 48px) / 3);
 }
+.work-card-link:hover {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-work-title {
     color: var(--primery-bcg-color);
     font-weight: 500;
@@ -465,8 +469,4 @@ list-style: none;
     border: 1px solid var(--accenr-text-color);
     border-top: none;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.work-card-content:hover {
-    border: 0.5px solid var(--secondery-bcg-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
