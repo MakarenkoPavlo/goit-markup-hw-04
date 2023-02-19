@@ -156,6 +156,7 @@ list-style: none;
     border-radius: 4px;
     display: block;
     margin: auto;
+    border: none;
 }
 
 .hero-button:hover,
@@ -288,7 +289,8 @@ list-style: none;
     height: 16px;
     fill: var(--secondery-bcg-color);
 }
-.comand-socials-link:hover {
+.comand-socials-link:hover,
+.comand-socials-link:focus {
    background-color: var(--active-btn-color);
 }
 
@@ -311,19 +313,11 @@ list-style: none;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    
-    
 }
 .customers-icon-item {
     width: 168px;
     height: 88px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.customers-icon-item:hover {
-    border: 1px solid var(--active-btn-color);
-}
-
 .customers-icon-link {
     display: flex;
     align-items: center;
@@ -331,9 +325,13 @@ list-style: none;
     width: 100%;
     height: 100%;
     fill: var(--secondery-text-color);
+    border: 1px solid var(--secondery-text-color);
+        border-radius: 4px;
     }
-.customers-icon-link:hover {
+.customers-icon-link:hover,
+.customers-icon-link:focus {
     fill: var(--active-btn-color);
+    border: 1px solid var(--active-btn-color);
 }
 .customers-icon {
     width: 104px;
@@ -402,7 +400,8 @@ list-style: none;
     height: 24px;
     fill: var(--secondery-bcg-color);
 }
-.footer-socials-link:hover {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
     background-color: var(--secondery-background-socials);
 }
 /* Портфолио */
@@ -450,19 +449,32 @@ list-style: none;
 .portfolio-work-card {
     flex-basis: calc((100% - 48px) / 3);
 }
+.work-card-link {
+    text-decoration: none;
+    
+}
 .work-card-link:hover {
     display: block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-work-title {
     color: var(--primery-bcg-color);
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 8px;
+    letter-spacing: 0.02em;
 }
 .portfolio-work-text {
+    color: var(--primery-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .work-card-content {
     padding: 32px 0 32px 16px;
